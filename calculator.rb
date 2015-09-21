@@ -2,8 +2,17 @@ class Calculator
   def add(a,b)
    a+b
    end
-end   
+  def sub(a,b)
+   a-b   	
+   end
+  def multiply(a,b)
+   a*b   	
+   end
+  def division(a,b)
+   a/b
+   end 
+end  
 cal=Calculator.new
-puts cal.add(20,40)
+puts cal.sub(20,40)
 
 
