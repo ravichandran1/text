@@ -23,7 +23,7 @@ require './calculator'
 	describe "devision" do
 	    it "devisions two number" do
 	         cal=Calculator.new
-	         expect(cal.devision)(100,10).to eql(10)
+	         expect(cal.devision(100,10)).to eql(10)
 	    end
 	end    
 	        		
