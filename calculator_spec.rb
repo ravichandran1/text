@@ -15,13 +15,13 @@ require './calculator'
 		end
 	end
 	describe "subtract " do
-		it "subtract two number" do
+		it "subtactions two number" do
 			 cal=Calculator.new
 			 expect(cal.subtract(100,50)).to eql(50)
 		end
 	end
 	describe "devision" do
-	    it "devision two number" do
+	    it "devisions two number" do
 	         cal=Calculator.new
 	         expect(cal.devision(100,10)).to eql(10)
 	    end
