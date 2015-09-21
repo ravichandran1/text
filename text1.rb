@@ -1,9 +1,9 @@
-class Arithmetic
+class Calculator
   def add(a,b)
    a+b
    end
 end   
-arith=Arithmetic.new
-puts arith.add(20,40)
+cal=Calculator.new
+puts cal.add(20,40)
 
 
