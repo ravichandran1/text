@@ -13,6 +13,6 @@ class Calculator
    end 
 end  
 cal=Calculator.new
-puts cal.sub(20,40)
+puts cal.multiply(20,40)
 
 
