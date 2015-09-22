@@ -12,6 +12,8 @@
         dimensition[:width] * dimensition[:width]
       elsif shape_name == 'triangle'
         dimensition[:breadth] * dimensition[:height]/2
+      elsif shape_name == 'circle'
+        dimensition[:radious] * dimensition[:radious] * 3.14
            
       end
     end
@@ -20,5 +22,8 @@ s = Shape.new('square', width: 20)
 s.area
 s = Shape.new('rectangle', width: 10, height: 10)
 s.area
-s = Shape.new('triangle', breadth: 40, height:10)
+s = Shape.new('triangle', breadth: 20, height:40)
 s.area
+s = Shape.new('circle', radious: 10)
+s.area
+
