@@ -7,18 +7,18 @@
     end
     def area
       if shape_name == 'rectangle'
-        dimensition[:width] * dimensition[:height]
+        dimensition[:width] * dimensition[:width]
       elsif shape_name == 'square'
         dimensition[:width] * dimensition[:height]
       elsif shape_name == 'triangle'
-        dimensition[:width] * dimensition[:height]
+        dimensition[:breadth] * dimensition[:height]/2
            
       end
     end
   end
-s = Shape.new('square', width: 100, height: 100)
+s = Shape.new('square', width: 20)
 s.area
-s = Shape.new('rectangle', width: 100, height: 100)
+s = Shape.new('rectangle', width: 20, height: 30)
 s.area
-s = Shape.new('triangle', width: 100, height:100)
+s = Shape.new('triangle', breadth: 20, height:30)
 s.area
