@@ -1,31 +1,25 @@
-class Shape
-  attr_reader :shape_name
+  class Shape
+    attr_reader :shape_name, :dimensition
 
-	def initilize(name,width,height)
-  end
-
-  def area 
-    if shape_name=rectangle
-      aera_retangle
-         width:100
-         height:100
+  	def initialize(name, dimensition)
+      @shape_name = name
+      @dimensition = dimensition
     end
-    elsif shape_name=triangle
-      aera_retangle
-         width:100
-         height:100
-    end     
-    elsif shape_name=cricle
-      area_circle
-         radius:100
-     else 
-         shape is not supported    
+    def area
+      if shape_name == 'rectangle'
+        dimensition[:width] * dimensition[:height]
+      elsif shape_name == 'square'
+        dimensition[:width] * dimensition[:width]
+      elsif shape_name == 'triangle'
+        dimensition[:width] * dimensition[:height]
+           
+      end
     end
   end
-end           
-    s = Shape.new('rectangle', width: 100, height: 100)
-    s.area
-    s = Shape.new('triangle', breath: 100, height: 100)
-    s.area
-    s = Shape.new('circle',  radius: 100)
-    s.area
+
+  shape = Shape.new('rectangle', width: 100,height: 100)
+  puts shape.area
+  shape = Shape.new('square', width: 100)
+  puts shape.area
+  shape = Shape.new('triangle',width: 100,height: 100)
+  puts = shape.area
