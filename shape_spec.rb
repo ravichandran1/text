@@ -13,9 +13,9 @@ describe Shape do
   describe 'area' do
 
     it "calculates area of triangle" do
-      s = Shape.new('triangle', breadth: 40, height: 10)
+      s = Shape.new('triangle', breadth: 20, height: 40)
 
-      expect(s.area).to eql(200)
+      expect(s.area).to eql(400)
     end
   end
   describe 'area' do
@@ -25,5 +25,13 @@ describe Shape do
 
       expect(s.area).to eql(100)
     end
-  end  
+  end
+  describe 'area' do
+
+    it "calculates area of circle" do
+      s = Shape.new('circle', radious: 10)
+
+        expect(s.area).to eql(314.0)
+    end
+  end     
 end          
