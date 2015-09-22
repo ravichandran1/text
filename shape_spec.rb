@@ -26,5 +26,4 @@ describe Shape do
       expect(s.area).to eql(100)
     end
   end
-
 end          
