@@ -2,22 +2,29 @@ require "rspec"
 require './shape'
 
 describe Shape do
-  describe "area" do
-    it "rectangle" do
-     sha=Shape.new
-     expect(sha.rectangle(width:100,height:100)).to eql(10000)
+  describe 'area' do
+
+    it "calculates area of square" do
+      s = Shape.new('square', width: 10, height: 10)
+
+      expect(s.area).to eql(100)
     end
   end
-  describe "area" do
-    it "triangle" do
-     sha=Shape.new
-     expect(sha.triangle(width:100,height:100)).to eql(10000)
+  describe 'area' do
+
+    it "calculates area of triangle" do
+      s = Shape.new('triangle', width: 10, height: 10)
+
+      expect(s.area).to eql(100)
     end
   end
-  describe "area" do
-    it "square" do
-     sha=Shape.new
-     expect(sha.square(width:100,height:100)).to eql(10000)
+  describe 'area' do
+
+    it "calculates area of rectangle" do
+      s = Shape.new('rectangle', width: 10, height: 10)
+
+      expect(s.area).to eql(100)
     end
-  end    
+  end
+
 end          

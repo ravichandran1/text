@@ -9,17 +9,10 @@
       if shape_name == 'rectangle'
         dimensition[:width] * dimensition[:height]
       elsif shape_name == 'square'
-        dimensition[:width] * dimensition[:width]
+        dimensition[:width] * dimensition[:height]
       elsif shape_name == 'triangle'
         dimensition[:width] * dimensition[:height]
            
       end
     end
   end
-
-  shape = Shape.new('rectangle', width: 100,height: 100)
-  puts shape.area
-  shape = Shape.new('square', width: 100)
-  puts shape.area
-  shape = Shape.new('triangle',width: 100,height: 100)
-  puts = shape.area
