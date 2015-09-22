@@ -16,3 +16,9 @@
       end
     end
   end
+s = Shape.new('square', width: 100, height: 100)
+s.area
+s = Shape.new('rectangle', width: 100, height: 100)
+s.area
+s = Shape.new('triangle', width: 100, height:100)
+s.area
