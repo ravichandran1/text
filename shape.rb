@@ -14,6 +14,9 @@
         dimensition[:breadth] * dimensition[:height]/2
       elsif shape_name == 'circle'
         dimensition[:radious] * dimensition[:radious] * 3.14
+      else shape_name == 'the given shape is not supported'
+         'puts invalied arrguments for shape'
+
            
       end
     end

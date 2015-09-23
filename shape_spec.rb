@@ -31,7 +31,8 @@ describe Shape do
     it "calculates area of circle" do
       s = Shape.new('circle', radious: 10)
 
-        expect(s.area).to eql(314.0)
+        expect(s.area).to eql(314.0 )    
+
     end
   end     
 end          
